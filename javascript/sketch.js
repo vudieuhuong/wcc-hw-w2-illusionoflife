@@ -5,7 +5,6 @@ let cat,catM,mushroom,mushroomM;
 let eatIsTrue;
 let y_ = 60;
 let slider;
-
 let timer = 10;
 let displayState = 0;
 
@@ -33,17 +32,9 @@ function setup() {
 
 function draw() {
   loop();
-
   background(slider.value(), 255, 8);
 
-
-
-
- 
-  
-
   //draw cat
-  
   push();
   rotateX(340);
   rotateY(235);
@@ -56,7 +47,6 @@ function draw() {
 }
 
 function addGUI(){
-
   //avatar
   ava = createImg('src/ava.png', 'avatar');
   ava.parent("gui-container");
